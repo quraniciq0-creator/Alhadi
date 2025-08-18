@@ -1,13 +1,43 @@
 ---
 layout: layouts/post.njk
-title: "Quran Learning in the Age of Notifications: Apps, Platforms & The Struggle for Consistency"
-description: "Explore how Gen Z Muslims are connecting with the Quran in the digital age. Learn about top apps, platforms, and practical tips to stay consistent despite distractions."
-category: "Quran Learning"
-date: 2025-07-15
-icon: "fas fa-mobile-alt"
-tags: ["quran-apps", quran education, "quran-learning", "digital-islam", "productivity", "gen-z-muslims"]
-image: "https://quraniciq.com/images/quran-tech.png"
-author: "Aisha Noor"
+title: >-
+  Quran Learning in the Age of Notifications: Apps, Platforms & The Struggle for
+  Consistency
+description: >-
+  Explore how Gen Z Muslims are connecting with the Quran in the digital age.
+  Learn about top apps, platforms, and practical tips to stay consistent despite
+  distractions.
+category: Quran Learning
+date: 2025-07-15T00:00:00.000Z
+icon: fas fa-mobile-alt
+tags: &ref_1
+  - quran-apps
+  - quran education
+  - quran-learning
+  - digital-islam
+  - productivity
+  - gen-z-muslims
+image: 'https://quraniciq.com/images/quran-tech.png'
+author: Aisha Noor
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: >-
+    Quran Learning in the Age of Notifications: Apps, Platforms & The Struggle
+    for Consistency
+  author:
+    '@type': Person
+    name: Aisha Noor
+  datePublished: 2025-07-15T00:00:00.000Z
+  description: >-
+    Explore how Gen Z Muslims are connecting with the Quran in the digital age.
+    Learn about top apps, platforms, and practical tips to stay consistent
+    despite distractions.
+  keywords: *ref_1
+  articleSection: Quran Learning
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': 'https://alhadi.com/posts/2025-07-17-quran-learning-digital-age '
 ---
 
 # Quran Learning in the Age of Notifications: Apps, Platforms & The Struggle for Consistency

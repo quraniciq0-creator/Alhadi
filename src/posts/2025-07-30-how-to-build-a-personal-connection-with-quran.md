@@ -1,13 +1,36 @@
 ---
 layout: layouts/post.njk
-title: "How To Build A Personal Connection With The Quran"
-description: "Learn simple ways to build a deeper, personal connection with the Quran for daily guidance"
-category: "Quranic Reflections"
-date: 2025-07-28
-icon: "fas fa-book-open"
-tags: ["Quran connection", "reflect on quran", "quran daily routine", "understanding quran"]
-image: "https://quraniciq.com/images/quran-connection.png"
-author: "Misbah Sajid"
+title: How To Build A Personal Connection With The Quran
+description: >-
+  Learn simple ways to build a deeper, personal connection with the Quran for
+  daily guidance
+category: Quranic Reflections
+date: 2025-07-28T00:00:00.000Z
+icon: fas fa-book-open
+tags: &ref_1
+  - Quran connection
+  - reflect on quran
+  - quran daily routine
+  - understanding quran
+image: 'https://quraniciq.com/images/quran-connection.png'
+author: Misbah Sajid
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: How To Build A Personal Connection With The Quran
+  author:
+    '@type': Person
+    name: Misbah Sajid
+  datePublished: 2025-07-28T00:00:00.000Z
+  description: >-
+    Learn simple ways to build a deeper, personal connection with the Quran for
+    daily guidance
+  keywords: *ref_1
+  articleSection: Quranic Reflections
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': >-
+      https://alhadi.com/posts/2025-07-30-how-to-build-a-personal-connection-with-quran
 ---
 
 # How To Build A Personal Connection With The Quran

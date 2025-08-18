@@ -1,12 +1,37 @@
 ---
-title: "Helping People Learn and Read Quran to Understand Allah's Ahkaam"
-description: "A comprehensive guide on how our platform empowers people to read the Quran with Tajweed, understand Allah’s Ahkaam, and apply divine guidance in daily life."
-tags: ["quran", "tajweed", "islamic-education", "ahkaam", "learning"]
-date: 2025-07-13
-author: "Quranic IQ Center"
-category: "Quran Learning"
-image: "/images/your-image.jpg"
+title: Helping People Learn and Read Quran to Understand Allah's Ahkaam
+description: >-
+  A comprehensive guide on how our platform empowers people to read the Quran
+  with Tajweed, understand Allah’s Ahkaam, and apply divine guidance in daily
+  life.
+tags: &ref_1
+  - quran
+  - tajweed
+  - islamic-education
+  - ahkaam
+  - learning
+date: 2025-07-13T00:00:00.000Z
+author: Quranic IQ Center
+category: Quran Learning
+image: /images/your-image.jpg
 layout: layouts/post.njk
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: Helping People Learn and Read Quran to Understand Allah's Ahkaam
+  author:
+    '@type': Person
+    name: Quranic IQ Center
+  datePublished: 2025-07-13T00:00:00.000Z
+  description: >-
+    A comprehensive guide on how our platform empowers people to read the Quran
+    with Tajweed, understand Allah’s Ahkaam, and apply divine guidance in daily
+    life.
+  keywords: *ref_1
+  articleSection: Quran Learning
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': 'https://alhadi.com/posts/2025-07-13-how-we-help-people-to-learn-quran'
 ---
 
 # Helping People Learn and Read Quran to Understand Allah's Ahkaam

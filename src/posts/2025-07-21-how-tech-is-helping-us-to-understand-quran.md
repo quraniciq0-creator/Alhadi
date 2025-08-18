@@ -1,12 +1,40 @@
 ---
-title: "How Technology is Helping Us Understand the Quran — But Also Taking Us Away From It"
-description: "An insightful exploration of how modern tools are enhancing Quranic understanding, yet the same tech can distract us from spiritual connection."
-tags: ["quran", "technology", "islam-in-modern-age", "learning", "distraction"]
-date: 2025-07-21
-author: "Quranic IQ Center"
-category: "Quran Learning"
-image: "/images/quran-technology.jpg"
+title: >-
+  How Technology is Helping Us Understand the Quran — But Also Taking Us Away
+  From It
+description: >-
+  An insightful exploration of how modern tools are enhancing Quranic
+  understanding, yet the same tech can distract us from spiritual connection.
+tags: &ref_1
+  - quran
+  - technology
+  - islam-in-modern-age
+  - learning
+  - distraction
+date: 2025-07-21T00:00:00.000Z
+author: Quranic IQ Center
+category: Quran Learning
+image: /images/quran-technology.jpg
 layout: layouts/post.njk
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: >-
+    How Technology is Helping Us Understand the Quran — But Also Taking Us Away
+    From It
+  author:
+    '@type': Person
+    name: Quranic IQ Center
+  datePublished: 2025-07-21T00:00:00.000Z
+  description: >-
+    An insightful exploration of how modern tools are enhancing Quranic
+    understanding, yet the same tech can distract us from spiritual connection.
+  keywords: *ref_1
+  articleSection: Quran Learning
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': >-
+      https://alhadi.com/posts/2025-07-21-how-tech-is-helping-us-to-understand-quran
 ---
 
 # How Technology is Helping Us Understand the Quran — But Also Taking Us Away From It

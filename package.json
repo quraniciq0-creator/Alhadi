@@ -1,17 +1,19 @@
 {
-  "name": "quranic-iq-blog",
+  "name": "alhadi-blog",
   "version": "1.0.0",
   "description": "Islamic Knowledge Blog using Eleventy",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
     "deploy": "npm run build && gh-pages -d _site",
-    "clean": "rm -rf _site"
-    
+    "clean": "rm -rf _site",
+    "watch": "node scripts/addBlogSchema.js"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "chokidar": "^3.6.0",
+    "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.1.6"

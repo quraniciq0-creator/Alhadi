@@ -1,13 +1,44 @@
 ---
 layout: layouts/post.njk
-title: "Unraveling the Complexities of Islamophobia: Imran Khan's Advocacy for Understanding and Unity"
-description: "Explore the global impact of Islamophobia post-9/11 and discover how Imran Khan champions peace, tolerance, and unity through powerful advocacy for Islam."
-category: "Islamic Education & Awareness"
-date: 2025-07-14
-icon: "fas fa-globe"
-tags: ["Islamophobia", "Imran Khan", "Peace", "Tolerance", "Islam", "Unity", "Post-9/11"]
-image: "https://quraniciq.com/images/imran-khan-islamophobia.png"
-author: "Quranic IQ Center"
+title: >-
+  Unraveling the Complexities of Islamophobia: Imran Khan's Advocacy for
+  Understanding and Unity
+description: >-
+  Explore the global impact of Islamophobia post-9/11 and discover how Imran
+  Khan champions peace, tolerance, and unity through powerful advocacy for
+  Islam.
+category: Islamic Education & Awareness
+date: 2025-07-14T00:00:00.000Z
+icon: fas fa-globe
+tags: &ref_1
+  - Islamophobia
+  - Imran Khan
+  - Peace
+  - Tolerance
+  - Islam
+  - Unity
+  - Post-9/11
+image: 'https://quraniciq.com/images/imran-khan-islamophobia.png'
+author: Quranic IQ Center
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: >-
+    Unraveling the Complexities of Islamophobia: Imran Khan's Advocacy for
+    Understanding and Unity
+  author:
+    '@type': Person
+    name: Quranic IQ Center
+  datePublished: 2025-07-14T00:00:00.000Z
+  description: >-
+    Explore the global impact of Islamophobia post-9/11 and discover how Imran
+    Khan champions peace, tolerance, and unity through powerful advocacy for
+    Islam.
+  keywords: *ref_1
+  articleSection: Islamic Education & Awareness
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': 'https://alhadi.com/posts/2025-07-14-unraveling-islamophobia-imran-khan'
 ---
 
 <!-- Article Schema for SEO -->

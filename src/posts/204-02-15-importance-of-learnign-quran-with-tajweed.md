@@ -1,13 +1,38 @@
 ---
 layout: layouts/post.njk
-title: "The Importance of Learning Quran with Tajweed"
-description: "Master the art of beautiful Quran recitation with proper Tajweed rules. Learn why correct pronunciation preserves the divine message and enhances spiritual connection."
-date: 2024-02-15
-author: "Quranic IQ Center"
-category: "Quran Learning"
-tags: ["tajweed", "quran-recitation", "islamic-education", "pronunciation"]
-icon: "fas fa-book-quran"
-image: "https://quraniciq.com/images/religion.png"
+title: The Importance of Learning Quran with Tajweed
+description: >-
+  Master the art of beautiful Quran recitation with proper Tajweed rules. Learn
+  why correct pronunciation preserves the divine message and enhances spiritual
+  connection.
+date: 2024-02-15T00:00:00.000Z
+author: Quranic IQ Center
+category: Quran Learning
+tags: &ref_1
+  - tajweed
+  - quran-recitation
+  - islamic-education
+  - pronunciation
+icon: fas fa-book-quran
+image: 'https://quraniciq.com/images/religion.png'
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: The Importance of Learning Quran with Tajweed
+  author:
+    '@type': Person
+    name: Quranic IQ Center
+  datePublished: 2024-02-15T00:00:00.000Z
+  description: >-
+    Master the art of beautiful Quran recitation with proper Tajweed rules.
+    Learn why correct pronunciation preserves the divine message and enhances
+    spiritual connection.
+  keywords: *ref_1
+  articleSection: Quran Learning
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': >-
+      https://alhadi.com/posts/204-02-15-importance-of-learnign-quran-with-tajweed
 ---
 
 # The Importance of Learning Quran with Tajweed

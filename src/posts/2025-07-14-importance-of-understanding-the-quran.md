@@ -1,13 +1,39 @@
 ---
-title: "The Importance of Understanding the Quran, Not Just Reciting It"
-description: "Explore why deep comprehension (Tadabbur) of the Holy Quran is essential alongside beautiful recitation. Learn practical ways to engage with the Quran, with links to trusted Islamic resources and related blog posts."
-category: "Islamic Education & Awareness"
+title: 'The Importance of Understanding the Quran, Not Just Reciting It'
+description: >-
+  Explore why deep comprehension (Tadabbur) of the Holy Quran is essential
+  alongside beautiful recitation. Learn practical ways to engage with the Quran,
+  with links to trusted Islamic resources and related blog posts.
+category: Islamic Education & Awareness
 layout: layouts/post.njk
-date: 2025-07-14
-author: "Quranic IQ Center"
-tags: ["Quran", "Tadabbur", "Understanding Quran", "Islamic Education", "Reflection", "Spiritual Growth"]
-image: "https://quraniciq.com/images/understanding-quran.png"
-icon: "fas fa-lightbulb"
+date: 2025-07-14T00:00:00.000Z
+author: Quranic IQ Center
+tags: &ref_1
+  - Quran
+  - Tadabbur
+  - Understanding Quran
+  - Islamic Education
+  - Reflection
+  - Spiritual Growth
+image: 'https://quraniciq.com/images/understanding-quran.png'
+icon: fas fa-lightbulb
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: 'The Importance of Understanding the Quran, Not Just Reciting It'
+  author:
+    '@type': Person
+    name: Quranic IQ Center
+  datePublished: 2025-07-14T00:00:00.000Z
+  description: >-
+    Explore why deep comprehension (Tadabbur) of the Holy Quran is essential
+    alongside beautiful recitation. Learn practical ways to engage with the
+    Quran, with links to trusted Islamic resources and related blog posts.
+  keywords: *ref_1
+  articleSection: Islamic Education & Awareness
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': 'https://alhadi.com/posts/2025-07-14-importance-of-understanding-the-quran'
 ---
 
 # The Importance of Understanding the Quran, Not Just Reciting It

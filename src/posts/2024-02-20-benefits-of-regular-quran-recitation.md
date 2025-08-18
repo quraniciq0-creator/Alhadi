@@ -1,13 +1,37 @@
 ---
 layout: layouts/post.njk
-title: "The Spiritual and Mental Benefits of Regular Quran Recitation"
-description: "Discover the profound benefits of daily Quran recitation, from spiritual peace to improved memory and concentration. Learn practical tips for establishing a consistent recitation routine."
-category: "Spiritual Growth"
-date: 2024-02-20
-icon: "fas fa-heart"
-tags: ["quran", "spiritual-growth", "mental-health", "daily-practice"]
-image: "https://quraniciq.com/images/islamic.png"
-author: "Quranic IQ Center"
+title: The Spiritual and Mental Benefits of Regular Quran Recitation
+description: >-
+  Discover the profound benefits of daily Quran recitation, from spiritual peace
+  to improved memory and concentration. Learn practical tips for establishing a
+  consistent recitation routine.
+category: Spiritual Growth
+date: 2024-02-20T00:00:00.000Z
+icon: fas fa-heart
+tags: &ref_1
+  - quran
+  - spiritual-growth
+  - mental-health
+  - daily-practice
+image: 'https://quraniciq.com/images/islamic.png'
+author: Quranic IQ Center
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: The Spiritual and Mental Benefits of Regular Quran Recitation
+  author:
+    '@type': Person
+    name: Quranic IQ Center
+  datePublished: 2024-02-20T00:00:00.000Z
+  description: >-
+    Discover the profound benefits of daily Quran recitation, from spiritual
+    peace to improved memory and concentration. Learn practical tips for
+    establishing a consistent recitation routine.
+  keywords: *ref_1
+  articleSection: Spiritual Growth
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': 'https://alhadi.com/posts/2024-02-20-benefits-of-regular-quran-recitation'
 ---
 
 <!-- FAQ Schema -->

@@ -1,13 +1,37 @@
 ---
 layout: layouts/post.njk
-title: "Essential Tajweed Rules Every Beginner Should Know"
-description: "Master the fundamental Tajweed rules to improve your Quran recitation. Learn about proper pronunciation, elongation, and stopping rules with practical examples."
-category: "Tajweed"
-date: 2024-02-25
-icon: "fas fa-microphone"
-tags: ["tajweed", "quran-recitation", "arabic-pronunciation", "islamic-learning"]
-image: "https://quraniciq.com/images/arabic.png"
-author: "Quranic IQ Center"
+title: Essential Tajweed Rules Every Beginner Should Know
+description: >-
+  Master the fundamental Tajweed rules to improve your Quran recitation. Learn
+  about proper pronunciation, elongation, and stopping rules with practical
+  examples.
+category: Tajweed
+date: 2024-02-25T00:00:00.000Z
+icon: fas fa-microphone
+tags: &ref_1
+  - tajweed
+  - quran-recitation
+  - arabic-pronunciation
+  - islamic-learning
+image: 'https://quraniciq.com/images/arabic.png'
+author: Quranic IQ Center
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: Essential Tajweed Rules Every Beginner Should Know
+  author:
+    '@type': Person
+    name: Quranic IQ Center
+  datePublished: 2024-02-25T00:00:00.000Z
+  description: >-
+    Master the fundamental Tajweed rules to improve your Quran recitation. Learn
+    about proper pronunciation, elongation, and stopping rules with practical
+    examples.
+  keywords: *ref_1
+  articleSection: Tajweed
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': 'https://alhadi.com/posts/2024-02-25-tajweed-rules-for-beginners'
 ---
 
 # Essential Tajweed Rules Every Beginner Should Know

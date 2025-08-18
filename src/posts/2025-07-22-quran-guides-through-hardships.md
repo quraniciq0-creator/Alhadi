@@ -1,13 +1,36 @@
 ---
 layout: layouts/post.njk
-title: "How The Quran Guides Us Through Hardships"
-description: "Discover how the Quran offers hope, healing, and guidance during hardships through its verses, stories, and Allah's mercy"
-category: "Quran Learning"
-date: 2025-07-22
-icon: "fas fa-heart"
-tags: ["quran-learning", "spiritual-growth", "patience", "hardships", "islamic-guidance"]
-image: "https://quraniciq.com/images/quran-comfort.png"
-author: "Misbah Sajid"
+title: How The Quran Guides Us Through Hardships
+description: >-
+  Discover how the Quran offers hope, healing, and guidance during hardships
+  through its verses, stories, and Allah's mercy
+category: Quran Learning
+date: 2025-07-22T00:00:00.000Z
+icon: fas fa-heart
+tags: &ref_1
+  - quran-learning
+  - spiritual-growth
+  - patience
+  - hardships
+  - islamic-guidance
+image: 'https://quraniciq.com/images/quran-comfort.png'
+author: Misbah Sajid
+schema:
+  '@context': 'https://schema.org'
+  '@type': BlogPosting
+  headline: How The Quran Guides Us Through Hardships
+  author:
+    '@type': Person
+    name: Misbah Sajid
+  datePublished: 2025-07-22T00:00:00.000Z
+  description: >-
+    Discover how the Quran offers hope, healing, and guidance during hardships
+    through its verses, stories, and Allah's mercy
+  keywords: *ref_1
+  articleSection: Quran Learning
+  mainEntityOfPage:
+    '@type': WebPage
+    '@id': 'https://alhadi.com/posts/2025-07-22-quran-guides-through-hardships'
 ---
 
 # How The Quran Guides Us Through Hardships
