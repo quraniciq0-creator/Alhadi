@@ -30,6 +30,52 @@ schema:
       https://alhadi.com/posts/2025-07-16-why-learning-quran-online-is-the-future
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Alhadi AI Assistant",
+  "applicationCategory": "ArtificialIntelligenceApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0"
+  },
+  "features": [
+    "AI-powered conversations",
+    "Natural language processing",
+    "Intelligent responses"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Online Quran Learning with AI Assistance",
+  "description": "Learn Quran online with AI-powered learning tools and certified teachers",
+  "provider": {
+    "@type": "Organization",
+    "name": "Quranic IQ Center"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How does AI help in learning Quran online?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our AI-powered system helps with pronunciation, tracking progress, and personalizing lessons."
+    }
+  }]
+}
+</script>
+
 # Why Learning Quran Online Is the Future: Benefits, Trends, and How to Start
 
 > "The best among you are those who learn the Quran and teach it."  
@@ -107,3 +153,9 @@ Join Quranic IQ Center today for a free trial and take the first step toward mas
 - Included Quranic verses and hadith references.
 - Content is original, valuable, and written for both users and search engines.
 -->
+
+<meta name="description" content="AI-powered assistant providing intelligent conversations and helpful responses">
+<meta name="keywords" content="AI, artificial intelligence, chatbot, virtual assistant, machine learning">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alhadi AI Assistant">
+<meta property="og:description" content="Experience intelligent conversations with our AI assistant">
