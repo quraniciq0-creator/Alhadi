@@ -12,6 +12,7 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "chokidar": "^3.6.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",

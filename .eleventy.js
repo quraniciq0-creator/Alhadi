@@ -1,12 +1,13 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItAnchor = require("markdown-it-anchor");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // ...existing code...
   // Add extractHeadings filter
-  eleventyConfig.addFilter("extractHeadings", function(content) {
+  eleventyConfig.addFilter("extractHeadings", function (content) {
     // Extracts all Markdown or HTML headings (h1-h6) from content and generates anchor IDs
     const headings = [];
     // HTML headings
@@ -25,12 +26,19 @@ module.exports = function(eleventyConfig) {
     return headings;
   });
   // Add hasHeadings filter
-  eleventyConfig.addFilter("hasHeadings", function(content) {
+  eleventyConfig.addFilter("hasHeadings", function (content) {
     // Checks for at least one Markdown or HTML heading (h1-h6)
     return /<h[1-6][^>]*>|^# .+/m.test(content);
   });
   // Add RSS plugin
   eleventyConfig.addPlugin(pluginRss);
+
+  // Add Sitemap plugin
+  eleventyConfig.addPlugin(pluginSitemap, {
+    sitemap: {
+      hostname: "https://quraniciq.com",
+    },
+  });
 
   // Configure Markdown
   const markdownItOptions = {
@@ -60,7 +68,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("sitemap.xml");
 
   // Add date filter
-  eleventyConfig.addFilter("dateFormat", function(date) {
+  eleventyConfig.addFilter("dateFormat", function (date) {
     return new Date(date).toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
@@ -69,12 +77,12 @@ module.exports = function(eleventyConfig) {
   });
 
   // Add excerpt filter
-  eleventyConfig.addFilter("excerpt", function(content) {
+  eleventyConfig.addFilter("excerpt", function (content) {
     return content.substr(0, 150) + "...";
   });
 
   // Add reading time filter
-  eleventyConfig.addFilter("readingTime", function(content) {
+  eleventyConfig.addFilter("readingTime", function (content) {
     const wordsPerMinute = 200;
     const wordCount = content.split(' ').length;
     const readingTime = Math.ceil(wordCount / wordsPerMinute);
@@ -82,7 +90,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Add slug filter
-  eleventyConfig.addFilter("slug", function(str) {
+  eleventyConfig.addFilter("slug", function (str) {
     return String(str)
       .toLowerCase()
       .replace(/\s+/g, '-')           // Replace spaces with -
@@ -92,12 +100,12 @@ module.exports = function(eleventyConfig) {
   });
 
   // Add striptags filter
-  eleventyConfig.addFilter("striptags", function(str) {
+  eleventyConfig.addFilter("striptags", function (str) {
     return String(str).replace(/<[^>]*>/g, '');
   });
 
   // Add category filter
-  eleventyConfig.addFilter("filterByCategory", function(posts, category) {
+  eleventyConfig.addFilter("filterByCategory", function (posts, category) {
     if (!category || category === "all") {
       return posts;
     }
@@ -105,32 +113,32 @@ module.exports = function(eleventyConfig) {
   });
 
   // Add collection for blog posts
-  eleventyConfig.addCollection("posts", function(collection) {
+  eleventyConfig.addCollection("posts", function (collection) {
     return collection.getFilteredByGlob("src/posts/**/*.md").sort((a, b) => {
       return new Date(b.data.date) - new Date(a.data.date);
     });
   });
 
   // Add collection for categories
-  eleventyConfig.addCollection("categories", function(collection) {
+  eleventyConfig.addCollection("categories", function (collection) {
     const posts = collection.getFilteredByGlob("src/posts/**/*.md");
     const categories = new Set();
-    
+
     posts.forEach(post => {
       if (post.data.category) {
         categories.add(post.data.category);
       }
     });
-    
+
     return Array.from(categories);
   });
 
   // Add tagsList data function
-  eleventyConfig.addGlobalData("tagsList", function() {
+  eleventyConfig.addGlobalData("tagsList", function () {
     return ["Quran", "Spiritual Growth", "Mental Health", "Daily Practice", "Tajweed", "Quran Recitation", "Arabic Pronunciation", "Islamic Learning", "tajweed", "quran-recitation", "islamic-education", "pronunciation"];
   });
 
-  eleventyConfig.addFilter("getAllTags", function(collection) {
+  eleventyConfig.addFilter("getAllTags", function (collection) {
     let tagSet = new Set();
     collection.getAll().forEach(item => {
       if (item.data.tags) {
