@@ -46,32 +46,125 @@ src/
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Windows Prerequisites
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
+To run this project on Windows, you will need the following tools installed:
 
-### Installation
+1. **Git**: Install [Git for Windows](https://gitforwindows.org/) to clone and manage branches.
+2. **Node.js**: Install [Node.js](https://nodejs.org/) (v18.x or higher is recommended; v14 or higher is supported).
+3. **Command Line Interface (CLI)**: We highly recommend using **Git Bash** (installed with Git for Windows), but you can also use **PowerShell** or **Command Prompt (cmd)**.
 
-1. Clone the repository:
+---
+
+### Windows Cloning & Installation
+
+Follow these steps to clone and run the project locally on your Windows machine:
+
+1. **Open Git Bash** (or your preferred terminal).
+2. **Clone the repository**:
    ```bash
    git clone https://github.com/bilal-512/Alhadi.git
    ```
-
-2. Install dependencies:
+3. **Navigate into the project directory**:
+   ```bash
+   cd Alhadi
+   ```
+4. **Install all dependencies**:
    ```bash
    npm install
    ```
-
-3. Start development server:
+5. **Start the local development server**:
    ```bash
    npm run start
    ```
-
-4. Build for production:
+   *Note: This command spins up the Eleventy live-reload server. You can view the live site in your browser at `http://localhost:8080` (or the port outputted in the console).*
+6. **Build for production**:
    ```bash
    npm run build
    ```
+
+---
+
+## 🤝 Contributing & Branching Workflow
+
+We welcome and encourage community contributions! If you want to propose changes, add features, or publish a blog, please follow this branching workflow:
+
+1. **Ensure your main branch is up-to-date**:
+   ```bash
+   git checkout main
+   git pull origin main
+   ```
+2. **Create a new branch** for your specific changes:
+   ```bash
+   git checkout -b <your-branch-name>
+   ```
+   *Naming Conventions:*
+   - For blog posts: `blog/your-blog-slug` (e.g., `blog/benefits-of-tajweed`)
+   - For features: `feature/your-feature-name` (e.g., `feature/contact-page-fix`)
+   - For bug fixes: `bugfix/issue-description` (e.g., `bugfix/broken-link`)
+3. **Make your changes** in the codebase and test them locally using `npm run start`.
+4. **Stage and commit your changes**:
+   ```bash
+   git add .
+   git commit -m "Brief but descriptive commit message"
+   ```
+5. **Push your branch to GitHub**:
+   ```bash
+   git push -u origin <your-branch-name>
+   ```
+6. **Open a Pull Request (PR)**: Go to the GitHub repository page and open a Pull Request from your branch to the `main` branch.
+
+---
+
+## ✍️ How to Publish a Blog
+
+If you would like to submit a blog post, it must follow the structure below to be approved and merged.
+
+### 📂 File Location & Naming
+
+1. **Target Folder**: All blog posts must be placed inside the `src/posts/` directory:
+   - [src/posts/](file:///home/bilal/Desktop/Project/QuranicIq/Alhadi/src/posts)
+2. **Filename Format**: The file must be named using the date and slug format:
+   - `YYYY-MM-DD-blog-slug.md` (e.g., `2026-06-20-how-to-learn-tajweed-online.md`)
+
+---
+
+### 📝 Blog Post Format
+
+Every blog post must be written in **Markdown** and include a **YAML Frontmatter** block at the very top.
+
+#### 1. YAML Frontmatter Template
+Copy and paste this template at the top of your markdown file, filling in your post's details:
+
+```yaml
+---
+layout: layouts/post.njk
+title: "Your Blog Post Title"
+description: "A short, engaging summary of the post (1-2 sentences) used for search engine snippets and the post excerpt."
+category: "Quran Learning" # Example categories: Quran Learning, Tajweed, Islamic Education, Spiritual Growth
+date: 2026-06-20T00:00:00.000Z # The publication date in ISO format
+icon: "fas fa-book" # FontAwesome icon class for the post metadata header
+tags:
+  - quran-learning
+  - spiritual-growth
+  - tajweed
+image: "https://quraniciq.com/images/quran-comfort.png" # Featured image URL
+author: "Your Name" # Optional: defaults to the site's default author
+---
+```
+
+#### 2. Writing the Markdown Body
+Follow these formatting rules when writing your blog post:
+- ❌ **Do NOT include a `# H1` Heading at the top**: The `layouts/post.njk` layout template automatically renders the `title` frontmatter field as the main `<h1>` header of the page.
+- ⚡ **Use H2 (`##`) and H3 (`###`) for headings**: Use proper hierarchy to structure your sections. These headings are automatically scanned to populate the **Table of Contents (TOC)** widget.
+- 🖼️ **Optimize Images**: If your post references custom images, save them in the `/images/` directory and keep them optimized for fast web loading.
+
+#### 3. Automatic Schema & Metadata Generation
+Our build system features an automated script (`scripts/addBlogSchema.js`) that reads post markdown and appends SEO-friendly structured schema (JSON-LD), word counts, reading time, and related posts to the frontmatter. 
+- You do **not** need to write the `schema:` block manually.
+- Running `npm run start` or `npm run watch` will automatically update the frontmatter of your newly created blog file to include these fields before building!
+
+---
 
 ## 🌐 SEO Features
 
@@ -83,23 +176,6 @@ src/
 - **Canonical URLs**: Proper URL management
 - **Structured Data**: Enhanced search engine understanding
 
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 Content Guidelines
-
-- All blog posts should include proper frontmatter
-- Images should be optimized for web
-- Follow the established content structure
-- Include appropriate meta descriptions and tags
-- Use proper heading hierarchy
 
 ## 📈 Analytics and Monitoring
 
