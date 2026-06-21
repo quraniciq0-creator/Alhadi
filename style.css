@@ -263,6 +263,7 @@ border-bottom: 1px solid #f0f0f0; /* subtle separation */
   min-height: 100vh;
   background-color: #F5F3EF;
   padding: 10px 100px;
+  overflow: hidden;
 }
 
 .hero-container {
@@ -274,6 +275,9 @@ border-bottom: 1px solid #f0f0f0; /* subtle separation */
 
 .left {
   width: 50%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  min-width: 0;
 }
 
 .left h2 {
@@ -324,13 +328,19 @@ border-bottom: 1px solid #f0f0f0; /* subtle separation */
   line-height: 1.8;
 }
 
+.buttons a {
+  display: inline-flex;
+  text-decoration: none;
+}
+
 .buttons {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   gap: 2rem;
   margin-top: 2rem;
   color: white;
+  flex-wrap: wrap;
 }
 
 .left button {
@@ -403,13 +413,13 @@ border-bottom: 1px solid #f0f0f0; /* subtle separation */
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: bounce 2s infinite;
+  z-index: 10;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  z-index: 1;
+  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: bounce 2s infinite;
 }
 
 /* Hover Glow */
@@ -494,12 +504,17 @@ border-bottom: 1px solid #f0f0f0; /* subtle separation */
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 150px;
   gap: 40px;
+  position: relative;
+  z-index: 1;
+  clear: both;
 }
 
 .courses h2 {
   font-size: 4rem;
+  z-index: 2;
+  position: relative;
 }
 
 .courses .cards {
